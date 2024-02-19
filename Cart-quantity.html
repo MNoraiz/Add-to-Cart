@@ -7,8 +7,6 @@
     <button
       onclick="
       console.log(`Cart Quantity:  ${cartQuantity}`);
-
-
       "
     >
       Show Quantity
@@ -82,7 +80,34 @@ if(cartQuantity +3 > 10){
 
     <button
       onclick="
+      if(cartQuantity -2 < 0){
+        alert('Not more items to remove')
+      }
+      else{
+        cartQuantity -=2;
+        console.log(`Cart Quantity:  ${cartQuantity}`);
+      }
+    "
+    >
+      -2
+    </button>
 
+    <button
+      onclick="
+      if(cartQuantity -3 < 0){
+        alert('Not more items to remove')
+      }
+      else{
+        cartQuantity -=3;
+        console.log(`Cart Quantity:  ${cartQuantity}`);
+      }
+    "
+    >
+      -3
+    </button>
+
+    <button
+      onclick="
       if(cartQuantity -1 < 0){
         alert('Not more items to remove')
       }
@@ -90,8 +115,6 @@ if(cartQuantity +3 > 10){
         cartQuantity -=1;
         console.log(`Cart Quantity:  ${cartQuantity}`);
       }
-
-      
     "
     >
       Remove from the cart
